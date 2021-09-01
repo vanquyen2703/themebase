@@ -100,11 +100,16 @@ ul li {
   opacity: 0.8;
   z-index: 1000;
 }
-.header {
+.home .header {
   height: 1002px;
   position: relative;
   background-image: url(./assets/images/bg.png);
   background-size: cover;
+}
+.header {
+  background: #333;
+  height: 100px;
+  position: relative;
 }
 .header__top {
   position: absolute;
@@ -113,7 +118,7 @@ ul li {
       background-color: #fff0;
 }
 .header__top .header__menu {
-  height: 115px;
+  height: 100px;
   background-color: #00000000;
   display: flex;
   justify-content: space-between;
@@ -205,7 +210,9 @@ ul li {
 .header__top .header__menu .head-right ion-icon {
   color: #fff;
 }
-.header .social-right {
+.header .social-right{display: none;}
+.home .header .social-right {
+  display: block;
   position: absolute;
   right: 100px;
   text-align: right;
@@ -244,6 +251,10 @@ ul li {
   transition: all 0.3s ease-in-out 0s;
 }
 .header .content-qc {
+  display: none;
+}
+.home .header .content-qc {
+  display: block;
   position: absolute;
   top: 325px;
   width: 100%;
@@ -315,9 +326,74 @@ ul.slick-dots {
 );
 }
 /* BREADCRUMD */
-.side-breadcrumb{
-  background-image: url(./assets/images/bg-breadcrumb.JPG)!important;
-  padding: 156px 0 112px;
+
+.breadcrumbs {
+  text-align: center;
+}
+.breadcrumbs .breadcrumb li::before {
+  display: contents;
+  content: "/\00a0";
+  font-size: 14px;
+}
+.breadcrumbs .breadcrumb li:first-child::before{
+  display: none;
+}
+.breadcrumb li:before{display: none;}
+.bread-title h1 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0 auto;
+  letter-spacing: 6px;
+}
+.side-breadcrumb .breadcrumbs .breadcrumb li {
+  padding: 16px 15px;
+  background: none;
+  font-size: 14px;
+  color: #fff!important;
+  text-transform: uppercase!important;
+  letter-spacing: 4px;
+}
+.breadcrumb>li+li:before {
+  display: contents;
+  content: "/\00a0";
+}
+.breadcrumb > li + li:before {
+  color: #fff;
+  padding: 0 8px 0 16px;
+}
+.breadcrumb, .breadcrumb li a, .breadcrumb > li + li::before {
+  color: #fff;
+  text-transform: uppercase!important;
+}
+.breadcrumb, .breadcrumb li a, .breadcrumb > li + li::before {
+  font-size: 14px;
+}
+.breadcrumb .home {
+  color: #ffffff;
+}
+.breadcrumb li a {
+  color: #fff;
+  cursor: pointer;
+}
+.breadcrumb>li {
+  display: inline-block;
+}
+.side-breadcrumb .page-title h1 {
+  font-family: Fira Sans!important;
+    color: #fff;
+    font-size: 56px!important;
+    font-weight: 700!important;
+    margin: 0 auto;
+    letter-spacing: 6px!important;
+}
+.side-breadcrumb .page-title {
+  float: inherit;
+  text-align: center;
+}
+.side-breadcrumb .page-title+.breadcrumbs {
+  float: inherit;
+  padding-top: 5px;
 }
 .side-breadcrumb:before{display: none;}
 /*<-----------------------------------3.1 Home_page_content--------------------------------------------->*/

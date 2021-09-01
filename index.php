@@ -48,77 +48,31 @@ get_header();
 			</div>
 		</div>
 		<div class="row banner__around">
-			<div class="banner__around--item bn1">
-				<a href="">
-					<div class="wrap-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-1.png" alt="" class="img-fluid">
-					</div>
-					<div class="bn-pro-info">
-						<h3 class="bn-pro-info__name">Gold Leaf Ring</h3>
-						<div class="bn-price"><span>$179.00</span></div>
-					</div>
-				</a>
+		<div class="banner__around--item bn1">
+			<?php dynamic_sidebar('banner1'); ?>
 			</div>
 			<div class="banner__around--item bn2">
-				<a href="">
-					<div class="wrap-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/img.png" alt="" class="img-fluid">
-					</div>
-					<div class="collap-sale">
-						<p class="s1">sale up to</p>
-						<p class="s2">70%</p>
-						<h3>Select Gold Clearance </h3>
-						<a href="#" class="shop-now">Shop now</a>
-					</div>
-				</a>
+			<?php dynamic_sidebar('banner2'); ?>
 			</div>
 			<div class="banner__around--item bn3">
-				<a href="">
-					<div class="wrap-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-3.png" alt="" class="img-fluid">
-					</div>
-					<div class="bn-ct">
-						<h4>New collection </h4>
-						<h3>Leaf&ensp;Ring </h3>
-					</div>
-				</a>
-
+			<?php dynamic_sidebar('banner3'); ?>
 			</div>
 		</div>
 		<div class="row banner__around2">
 			<div class="banner__around--item bn4">
-				<a href="">
-					<div class="wrap-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-4.png" alt="" class="img-fluid">
-					</div>
-				</a>
+			<?php dynamic_sidebar('banner4'); ?>
 			</div>
 			<div class="banner__around--item bn5">
-				<a href="">
-					<div class="wrap-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-5.png" alt="" class="img-fluid">
-					</div>
-					<div class="bn-pro-info">
-						<h3 class="bn-pro-info__name">Rose Gold Necklaces </h3>
-						<div class="bn-price"><span>$179.00</span></div>
-					</div>
-				</a>
+			<?php dynamic_sidebar('banner5'); ?>
 			</div>
 			<div class="banner__around--item bn6">
-				<a href="">
-					<div class="wrap-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/6.png" alt="" class="img-fluid">
-					</div>
-					<div class="content-bn">
-						<h3>Princess Ring Rose Gold </h3>
-						<p>Rose gold plated over brass  * One size</p>
-					</div>
-				</a>
+			<?php dynamic_sidebar('banner6'); ?>
 			</div>
 		</div>
 
 	</div>
 </section>
+
 <section class="product">
 	<div class="container">
 		<div class="row">

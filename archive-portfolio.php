@@ -1,5 +1,5 @@
 <?php get_header();
-$cols = Themebase_Global::get_page_sidebar();?>
+?>
 <?php get_sidebar('left'); ?>
     <div class="<?php echo esc_attr($cols);?>">
         <div id="primary" class="content-area">

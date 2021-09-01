@@ -1,9 +1,8 @@
 <?php
 get_header();
-$cols = Themebase_Global::get_page_sidebar();
 ?>
-<?php get_sidebar('left'); ?>
-	<div class="<?php echo esc_attr($cols);?>">
+<div class="container">
+    <div class="<?php echo esc_attr($cols);?>">
 		<div id="primary" class="content-area">
              <?php if (have_posts()): ?>                        
                  <?php get_template_part('templates/content', 'blog-archive'); ?>
@@ -12,5 +11,7 @@ $cols = Themebase_Global::get_page_sidebar();
              <?php endif; ?>
 		</div> <!-- End primary -->
 	</div>
-<?php get_sidebar('right'); ?>
+</div>
+	
+
 <?php get_footer(); ?> 

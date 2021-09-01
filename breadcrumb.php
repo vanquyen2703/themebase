@@ -84,6 +84,8 @@ if($breadcrumb_align == 'center'){
 			<?php } ?>
 			<?php if ($breadcrumb):?>
 	            <div class="breadcrumbs">
+					<!-- <div class="bread-title"><h1><?php echo get_the_title(); ?></h1></div> -->
+				
 	                <?php Themebase_Templates::breadcrumbs(); ?>
 	            </div>
 	        <?php endif;?>

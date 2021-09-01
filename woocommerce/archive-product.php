@@ -49,7 +49,8 @@ if (Themebase::setting('shop_archive_filter') && (($themebase_left_sidebar !== '
     endif;
 endif;
 ?>
-<div class="row no-margin <?php echo esc_attr($class_filter); ?> <?php echo esc_attr($class_filter_top); ?>">
+<div class="container">
+    <div class="row no-margin <?php echo esc_attr($class_filter); ?> <?php echo esc_attr($class_filter_top); ?>">
     <?php
     get_sidebar('left');
     ?>
@@ -165,6 +166,8 @@ endif;
 
     <?php get_sidebar('right'); ?>
 </div>
+</div>
+
 <?php do_action('woocommerce_after_main_content'); ?>
 <?php get_footer('shop'); ?>
 

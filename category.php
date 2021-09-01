@@ -1,6 +1,5 @@
 <?php 
 get_header(); 
-$themebase_class = themebase_get_layout_class();
 ?>
 <?php get_sidebar('left'); ?> 
 	<div class="<?php echo esc_attr($themebase_class);?>">
@@ -12,5 +11,4 @@ $themebase_class = themebase_get_layout_class();
              <?php endif; ?>
 		</div> <!-- End primary -->
 	</div>
-<?php get_sidebar('right'); ?> 
 <?php get_footer(); ?>

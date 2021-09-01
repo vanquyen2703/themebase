@@ -19,7 +19,7 @@ if (get_post_type() =='portfolio') {
         </div>
 		<button type="submit" class="submit btn-search">
 			<span class="search-text"><?php echo esc_html__('Search','themebase'); ?></span>
-			<i class="theme-icon-search"></i>
+			<ion-icon name="search-outline"></ion-icon>
 		</button>
         <?php
         if (get_post_type() == 'post') {
