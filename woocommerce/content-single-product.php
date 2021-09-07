@@ -59,7 +59,7 @@ if ($themebase_product_thumbnails === 'vertical') {
                  * @hooked woocommerce_show_product_sale_flash - 10
                  * @hooked woocommerce_show_product_images - 20
                  */
-                do_action('woocommerce_before_single_product_summary');
+                // do_action('woocommerce_before_single_product_summary');
                 ?>
             </div>
             <div class="col-xl-4 col-lg-4 col-sm-12 col-md-12 product-detail-summary">

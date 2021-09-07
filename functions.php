@@ -54,6 +54,46 @@ function themebase_theme_setup()
             'flex-height' => false,
         )
     );
+
+    register_sidebar( array(
+        'name'          => __( 'Product', 'text_domain' ),
+        'id'            =>'product',
+        'description'   => __( 'Product', 'text_domain' ),
+        'before_widget' => '<div id="%1$s" class="widget sb_news %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="h2-title">',
+        'after_title'   => '</h2>',
+    ) ); 
+
+    register_sidebar( array(
+        'name'          => __( 'Slide', 'text_domain' ),
+        'id'            =>'slide',
+        'description'   => __( 'Slide', 'text_domain' ),
+        'before_widget' => '<div id="%1$s" class="widget sb_news %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="h2-title">',
+        'after_title'   => '</h2>',
+    ) ); 
+
+    register_sidebar( array(
+        'name'          => __( 'Social', 'text_domain' ),
+        'id'            =>'social',
+        'description'   => __( 'Social', 'text_domain' ),
+        'before_widget' => '<div id="%1$s" class="widget sb_news %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="h2-title">',
+        'after_title'   => '</h2>',
+    ) ); 
+
+    register_sidebar( array(
+        'name'          => __( 'Partner', 'text_domain' ),
+        'id'            =>'partner',
+        'description'   => __( 'Partner', 'text_domain' ),
+        'before_widget' => '<div id="%1$s" class="widget sb_news %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="h2-title">',
+        'after_title'   => '</h2>',
+    ) ); 
 }
 
 add_action('after_setup_theme', 'themebase_theme_setup');
@@ -91,3 +131,5 @@ function slides() {
     flush_rewrite_rules();
 }
 add_action( 'init', 'slides' );
+
+

@@ -56,22 +56,13 @@ if (themebase_get_meta_value('meta_header_sticky') ==''){
         </div>
     </div>
     <div class="social-right">
-        <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
-        </ul>
+    <?php dynamic_sidebar('social'); ?>
     </div>
     <div class="content-qc">
         <div class="container">
             <div class="row">
                 <div class="qc-caption">
-                    <p>Spring 2017 </p>
-                    <h2>It’s your shine time</h2>
-                    <div class="dicover">
-                        <a href="">Discover now </a>
-                    </div>
+                <?php dynamic_sidebar('slide'); ?>
                 </div>
             </div>
         </div>

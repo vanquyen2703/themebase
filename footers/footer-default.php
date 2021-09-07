@@ -16,14 +16,7 @@ if ($footer_layout === 'wide'){
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo .png" alt="" class="img-fluid">
 			</div>
 			<div class="menu-ft">
-				<ul>
-					<li><a href="" class="first">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Pages</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
+			<?php dynamic_sidebar('footer'); ?>
 			</div>
 			<div class="subcribe"><a href="">Subscribe <ion-icon name="mail-outline"></ion-icon></a></div>
 
