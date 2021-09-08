@@ -1261,6 +1261,9 @@ body.woocommerce ul.products li.product .price, div.woocommerce ul.products li.p
   color: #8f8f8f;
   font-family: FiraSans;
 }
+.comments-area {
+  margin-bottom: 50px;
+}
 @media all and (max-width: 1920px) {
   .container-fluid {
     max-width: 1750px;
