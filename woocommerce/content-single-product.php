@@ -51,7 +51,7 @@ if ($themebase_product_thumbnails === 'vertical') {
             $gallery_ids = $product->get_gallery_image_ids();
             $gallery = empty($gallery_ids) ? 'no-gallery' : 'has-gallery';
             ?>
-            <div class="col-xl-8 col-lg-8 col-sm-12 col-md-12 product-images-wrapper <?php echo esc_attr( $gallery ); ?>">
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-md-12 product-images-wrapper <?php echo esc_attr( $gallery ); ?>">
                 <?php
                 /**
                  * Hook: woocommerce_before_single_product_summary.
@@ -59,10 +59,10 @@ if ($themebase_product_thumbnails === 'vertical') {
                  * @hooked woocommerce_show_product_sale_flash - 10
                  * @hooked woocommerce_show_product_images - 20
                  */
-                // do_action('woocommerce_before_single_product_summary');
+                 do_action('woocommerce_before_single_product_summary');
                 ?>
             </div>
-            <div class="col-xl-4 col-lg-4 col-sm-12 col-md-12 product-detail-summary">
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-md-12 product-detail-summary">
                 <div class="summary entry-summary">
                     <?php
                     /**
